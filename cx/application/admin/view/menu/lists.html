@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="__ADM__/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__CTRL__/pagination/js/jquery.min.js"></script>
+
+<script type="text/javascript">
+   $(function(){
+        $('.tablelist tbody tr:odd').addClass('odd');
+   });
+</script>
+
+
+</head>
+
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    {volist name="page_path" id="item"}
+        <li><a href="javascript:;"><{$item.name}></a></li>
+    {/volist}
+    </ul>
+    </div>
+
+    
+    
+    <div class="rightinfo">
+    
+        
+        
+        <div class="place">
+            <span>当前编辑路径：</span>
+            <ul class="placeul">
+                {volist name="path" id="item"}
+                    <li>
+                        <a href="<{:url('admin/Menu/lists', ['id'=>isset($item['id']) ? $item['id'] : 0])}>"><{$item.name ?? '##'}></a>
+                    </li>
+                {/volist}
+            </ul>
+
+            {if condition="$parent"}
+                <span style="float:right; margin-right: 10px;">
+                    <a href="<{:url('admin/Menu/lists', ['id'=>$parent ? $parent['pid']:0])}>">&laquo;返回上一层</a>
+                </span>
+            {else /}
+                <span style="float:right; margin-right: 10px;">
+                    <a href="javascript:alert('已是根目录');">&laquo;返回上一层</a>
+                </span>
+            {/if}
+
+        </div>
+
+        <table class="tablelist">
+        	<thead>
+        	<tr>
+                <th>菜单名</th>
+                <th>父级菜单</th>
+                <th>是否框架链接</th>
+                <th>链接内容</th>
+                <th>是否可见</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            {if condition="!isset($menus) || count($menus) <= 0"}
+                <tr>
+                    <td colspan="7" style="text-align: center;">
+                        <h2>无菜单项，请
+                            <a href="<{:url('admin/Menu/lists', ['id'=>$parent ? $parent['pid']:0])}>" 
+                               style="text-decoration: underline;">返回上层</a>
+                        </h2>
+                    </td>
+                </tr>
+            {else /}
+                {volist name="menus" id="menu"}
+                    <tr>
+                        <td><{$menu.name}></td>
+                        <td>
+                            <{$parent.name ?? '根节点'}>
+                        </td>
+                        <td><{$menu.is_think_url ? '是' : '否'}></td>
+                        <td><{$menu.url_str}></td>
+                        <td><{$menu.is_hide ? '否' : '是'}></td>
+                        <td><{$menu.ctime}></td>
+                        <td>
+                        <script type="text/javascript">
+                            function confirm_(url){
+                                if(confirm('确定要删除吗?')) location.href = url;
+                            }
+                        </script>
+                            <a href="<{:url('admin/Menu/lists', ['id'=>$menu['id']])}>"
+                                class="tablelink">子菜单</a>
+                            &nbsp;|&nbsp;
+                            <a href="<{:url('admin/Menu/edit', ['id'=>$menu['id']])}>" class="tablelink"> 编辑</a>
+                            &nbsp;|&nbsp;
+                            <a href="javascript:confirm_('<{:url('admin/Menu/del', ['id'=>$menu['id']])}>')" class="tablelink"> 删除</a>
+                        </td>
+                    </tr> 
+                {/volist}
+            {/if}
+            
+            
+                   
+            </tbody>
+        </table>
+
+        <{$page}>
+    
+    </div>
+    
+    
+
+</body>
+
+</html>

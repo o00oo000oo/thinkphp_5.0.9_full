@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="__ADM__/css/style.css" rel="stylesheet" type="text/css" />
+<link href="__ADM__/css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__ADM__/js/jquery.js"></script>
+<script type="text/javascript" src="__ADM__/js/select-ui.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+        width : 345           
+    });
+});
+</script>
+</head>
+
+<body>
+<form method="POST" action="<{:url('admin/Menu/saveMenu', ['id' => $menu['id']])}>">
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    {volist name="page_path" id="item"}
+        <li><a href="javascript:;"><{$item.name}></a></li>
+    {/volist}
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    <div class="formtitle"><span>基本信息</span></div>
+    
+
+    <ul class="forminfo">
+        <li>
+            <label>菜单名</label>
+            <input name="name" type="text" class="dfinput" value="<{$menu.name}>" />
+            <i>*</i>
+        </li>
+        <li>
+            <label>父菜单</label>
+            <div class="vocation">
+                <select name="pid" class="select1">
+                    {volist name="tree" id="node"}
+                        <option value="<{$node.id}>"
+                        <{$node.id == $menu.pid ? 'selected="selected"':''}>
+                        ><{$node.name}>
+                        </option>
+                    {/volist}
+                </select>
+            </div>
+            <i style="line-height:35px;">多个关键字用,隔开</i>
+        </li>
+        <li>
+            <label>是否内部链接</label>
+            <cite>
+                <input name="is_think_url" type="radio" value="1"
+                <{:intval($menu['is_think_url']) > 0 ? 'checked="checked"':''}> />
+                是&nbsp;&nbsp;&nbsp;&nbsp;
+                <input name="is_think_url" type="radio" value="0"
+                <{:intval($menu['is_think_url']) <=0  ? 'checked="checked"':''}> />
+                否
+            </cite>
+        </li>
+        <li>
+            <label>链接内容</label>
+            <input name="url_str" type="text" class="dfinput" value="<{$menu.url_str}>" />
+        </li>
+        <li>
+            <label>是否显示</label>
+            <cite>
+                <input name="is_hide" type="radio" value="0"
+                <{:intval($menu['is_hide']) <=0 ? 'checked="checked"':''}> />
+                是&nbsp;&nbsp;&nbsp;&nbsp;
+                <input name="is_hide" type="radio" value="1"
+                <{:intval($menu['is_hide']) > 0 ? 'checked="checked"':''}> />
+                否
+            </cite>
+        </li>
+        <li>
+            <label>&nbsp;</label>
+            <input name="" type="submit" class="btn" value="确认保存"/>
+            <input name="" type="button" class="btn" value="返回" 
+                onclick="history.back(-1);" />
+        </li>
+    </ul>
+    
+    
+    </div>
+
+</form>
+</body>
+
+</html>

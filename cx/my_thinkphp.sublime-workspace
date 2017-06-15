@@ -1,0 +1,577 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"menu",
+				"menu_id"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"border-l",
+				"border-left"
+			],
+			[
+				"border-bo",
+				"border-bottom-color"
+			],
+			[
+				"border-b",
+				"border-bottom-width"
+			],
+			[
+				"d",
+				"dashed"
+			],
+			[
+				"border--b",
+				"border-bottom-style"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"butto",
+				"buttons"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/admin/controller/Menu.php",
+			"settings":
+			{
+				"buffer_size": 2577,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/admin/view/menu/lists.html",
+			"settings":
+			{
+				"buffer_size": 3931,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/admin/controller/Index.php",
+			"settings":
+			{
+				"buffer_size": 649,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/cx_helper.php",
+			"settings":
+			{
+				"buffer_size": 1780,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "Package Control: remo",
+		"selected_items":
+		[
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: en",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: inta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"emmet",
+				"Toggle Comment"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 352.0,
+		"history":
+		[
+			"import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.Net/'+pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.NET/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = pf2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = pf2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = ",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/GitHub/thinkphp_5.0.9_full/cx",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/controller",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/index",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/Member",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/menu",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/Product",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/cxconfig"
+	],
+	"file_history":
+	[
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/index/left.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/cx_helper.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/menu/lists.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/menu/edit.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/menu/add.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/controller/Menu.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/Member/lists.html",
+		"/D/BaiduNetdiskDownload/uimaker.com.2015/uimaker.com.2015/蓝色/web/tab.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/cxconfig/config.php",
+		"/D/BaiduNetdiskDownload/uimaker.com.2015/uimaker.com.2015/蓝色/web/index.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/menu/saveMenu.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/thinkphp/library/think/Config.php",
+		"/D/BaiduNetdiskDownload/uimaker.com.2015/uimaker.com.2015/蓝色/web/form.html",
+		"/D/BaiduNetdiskDownload/uimaker.com.2015/uimaker.com.2015/蓝色/web/filelist.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/thinkphp/library/think/paginator/driver/Cx.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/thinkphp/library/think/Paginator.php",
+		"/D/BaiduNetdiskDownload/uimaker.com.2015/uimaker.com.2015/蓝色/web/right.html",
+		"/D/BaiduNetdiskDownload/uimaker.com.2015/uimaker.com.2015/蓝色/web/error.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/thinkphp/library/think/paginator/driver/Bootstrap.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/model/AdminMenu.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/public/ctrl/pagination/index.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/public/ctrl/jquery.pagination/js/jquery.min.js",
+		"/C/Users/Administrator/Downloads/jQuery-pagination-master/jQuery-pagination-master/example/index.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/public/admin_framework/css/style.css",
+		"/D/GitHub/wxh/弹框/jqueryAlert/index.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/controller/Product.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/controller/Member.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/Product/list.html",
+		"/D/BaiduNetdiskDownload/uimaker.com.2015/uimaker.com.2015/蓝色/web/imgtable.html",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Autoprefixer/readme.md",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/controller/Index.php",
+		"/C/pyqt4/sip/README",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/admin/view/index/main.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/index/controller/Index.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/index/view/index/left.html",
+		"/D/BaiduNetdiskDownload/uimaker.com.2015/uimaker.com.2015/蓝色/web/left.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/cxconfig/database.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/index/view/index/main.html",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/database.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cx/application/index/view/index/index.html",
+		"/D/GitHub/thinkphp_5.0.9_full/application/index/view/index/top.html",
+		"/D/GitHub/thinkphp_5.0.9_full/application/index/view/index/footer.html",
+		"/D/GitHub/thinkphp_5.0.9_full/application/index/controller/Index.php",
+		"/D/GitHub/thinkphp_5.0.9_full/application/index/view/index/main.html",
+		"/D/GitHub/thinkphp_5.0.9_full/application/index/view/index/left.html",
+		"/D/GitHub/thinkphp_5.0.9_full/application/index/view/index/index.html",
+		"/D/GitHub/thinkphp_5.0.9_full/application/index/view/index/top - 副本.html",
+		"/D/GitHub/thinkphp_5.0.9_full/index.php",
+		"/D/GitHub/thinkphp_5.0.9_full/cxconfig/config.php",
+		"/D/GitHub/thinkphp_5.0.9_full/thinkphp/library/think/Controller.php",
+		"/D/GitHub/thinkphp_5.0.9_full/application/admin/controller/Index.php",
+		"/D/GitHub/thinkphp_5.0.9_full/myconfig/config.php",
+		"/D/GitHub/thinkphp_5.0.9_full/thinkphp/library/think/Db.php",
+		"/D/GitHub/thinkphp_5.0.9_full/public/index.php",
+		"/D/GitHub/thinkphp_5.0.9_full/thinkphp/library/think/db/connector/Mysql.php",
+		"/D/GitHub/thinkphp_5.0.9_full/myconfig/database.php",
+		"/D/GitHub/ThinkPHP5-Study-Note/thinkPHP学习笔记.txt",
+		"/D/GitHub/thinkphp_5.0.9_full/myconfig/extra/demo1.php",
+		"/D/GitHub/thinkphp_5.0.9_full/myconfig/gxq.php",
+		"/D/GitHub/thinkphp_5.0.9_full/myconfig/admin/extra/demo2.php",
+		"/D/GitHub/thinkphp_5.0.9_full/myconfig/admin/config.php",
+		"/D/GitHub/thinkphp_5.0.9_full/myconfig/admin/mj.php",
+		"/D/GitHub/thinkphp_5.0.9_full/myconfig/extra/student.php",
+		"/D/GitHub/thinkphp_5.0.9_full/myconfig/admin/extra/baby.php",
+		"/D/GitHub/thinkphp_5.0.9_full/application/extra/demo1.php",
+		"/D/GitHub/thinkphp_5.0.9_full/application/index/config.php",
+		"/D/GitHub/thinkphp_5.0.9_full/application/extra/queue.php",
+		"/D/GitHub/thinkphp_5.0.9_full/thinkphp/library/think/Config.php",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/GitHub/thinkphp_5.0.9_full/thinkphp/library/think/config/driver/Json.php",
+		"/D/GitHub/thinkphp_5.0.9_full/application/tags.php",
+		"/D/GitHub/thinkphp_5.0.9_full/application/config.php",
+		"/D/GitHub/thinkphp_5.0.9_full/thinkphp/convention.php",
+		"/D/GitHub/thinkphp_5.0.9_full/thinkphp/base.php",
+		"/D/GitHub/thinkphp_5.0.9_full/thinkphp/start.php",
+		"/D/我的文档/GitHub/wxh/弹框/jqueryAlert/login_save.asp",
+		"/D/我的文档/GitHub/wxh/弹框/jqueryAlert/index.html",
+		"/D/我的文档/GitHub/wxh/弹框/jqueryAlert/js/demo.js",
+		"/D/我的文档/GitHub/wxh/弹框/jqueryAlert/js/demo - 副本.js",
+		"/D/我的文档/GitHub/wxh/弹框/jqueryAlert/demo.html",
+		"/C/Users/Administrator/Desktop/test.html",
+		"/C/Users/Administrator/Desktop/版本B-超链接版/js/demo.js",
+		"/C/Users/Administrator/Desktop/版本B-封装版/index.html",
+		"/D/我的文档/GitHub/Oracle/表空间管理.sql",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/我的文档/GitHub/mj_demo/maojun.html",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Gist/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Installed Packages/Gist.sublime-package",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/ConvertToUTF8/ConvertToUTF8.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Administrator/Desktop/版本B-封装版/login_save.asp"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"each_back_tree",
+			"get_tree_select",
+			"cach",
+			"images",
+			"\"images",
+			"\"images/",
+			"parent",
+			"<.+>",
+			"getAvailablePageWrapper",
+			"getPageLinkWrapper",
+			"<.+>",
+			"getDisabledTextWrapper",
+			"getActivePageWrapper",
+			"getPageLinkWrapper",
+			"getUrlLinks",
+			"getLinks",
+			"getNextButton",
+			"getPreviousButton",
+			"pagination",
+			"/*left",
+			"left",
+			";\"",
+			"%;\"",
+			";\">|</",
+			"\"images/",
+			"000000",
+			";\n",
+			"vo.",
+			"vo",
+			"__ADM__/images",
+			"src=\"images/",
+			"src=\"images",
+			"images/icon",
+			"jsonpReturn",
+			";\n",
+			"select",
+			"());",
+			" ",
+			"m	",
+			" ",
+			"E",
+			"!"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\"__ADM__/images/",
+			"__ADM__/images/",
+			"src=\"__ADM__/images",
+			"__ADM__/images/icon",
+			" ",
+			"m\\n",
+			"\\t"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/admin/controller/Menu.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								638,
+								638
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1694.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/admin/view/menu/lists.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3606,
+								3606
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1914.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/admin/controller/Index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								434,
+								434
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/cx_helper.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1661,
+								1661
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1144.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "my_thinkphp.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

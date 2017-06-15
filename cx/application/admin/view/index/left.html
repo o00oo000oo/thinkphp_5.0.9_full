@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="__ADM__/css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="__ADM__/js/jquery.js"></script>
+
+<style type="text/css">
+    /* 菜单叶子节点被选中后的样式 */
+    .sub-menus li.active {
+        font-weight: bold; 
+        text-decoration: underline;
+        border:1px dashed #e3e3e3;
+        border-left: none;
+        border-right: none;
+    }
+    .sub-menus { padding :0 !important; }
+    
+</style>
+
+<script type="text/javascript">
+$(function(){	
+	//导航切换
+	$(".menuson .header").click(function(){
+		var $parent = $(this).parent();
+		$(".menuson>li.active").not($parent).removeClass("active open").find('.sub-menus').hide();
+		
+		$parent.addClass("active");
+		if(!!$(this).next('.sub-menus').size()){
+			if($parent.hasClass("open")){
+				$parent.removeClass("open").find('.sub-menus').hide();
+			}else{
+				$parent.addClass("open").find('.sub-menus').show();	
+			}
+			
+			
+		}
+	});
+	
+	// 三级菜单点击
+	$('.sub-menus li').click(function(e) {
+        $(".sub-menus li.active").removeClass("active")
+		$(this).addClass("active");
+    });
+	
+	$('.title').click(function(){
+		var $ul = $(this).next('ul');
+		$('dd').find('.menuson').slideUp();
+		if($ul.is(':visible')){
+			$(this).next('.menuson').slideUp();
+		}else{
+			$(this).next('.menuson').slideDown();
+		}
+	});
+})	
+</script>
+
+
+</head>
+
+<body style="background:#f0f9fd;">
+
+   
+
+
+
+
+
+
+	<div class="lefttop"><span></span>系统菜单</div>
+    <dl class="leftmenu">
+        
+
+        {volist name="menu" id="item"}
+
+            <dd>
+                <div class="title">
+                    <span><img src="__ADM__/images/leftico01.png" /></span> <{$item.name}>
+                </div>
+                {if condition="isset($item['children'])"}
+                <ul class="menuson">
+                    {volist name="item.children" id="child"}
+                        <li>
+
+                            {if condition="isset($child['children'])"}
+                                <div class="header">
+                                    <cite></cite>
+                                    <a href="javascript:;"> <{$child.name}> </a>
+                                    <i></i>
+                                </div>
+                                <ul class="sub-menus">
+                                    {volist name="child.children" id="sub_child"}
+                                    <li>
+                                        {if condition="$sub_child['is_think_url'] == 0"}
+                                            <a href="<{$sub_child.url_str}>" target="rightFrame"> 
+                                                <{$sub_child.name}> 
+                                            </a>
+                                        {else /}
+                                            <a href="<{:url($sub_child['url_str'], ['menu_id'=>$sub_child['id']])}>" target="rightFrame"> 
+                                                <{$sub_child.name}> 
+                                            </a>
+                                        {/if}
+                                    </li>
+                                    {/volist}
+                                </ul>
+                            {else /}
+                                <cite></cite>
+                                {if condition="$child['is_think_url'] == 0"}
+                                    <a href="<{$child.url_str}>" target="rightFrame"> 
+                                        <{$child.name}>
+                                    </a>
+                                {else /}
+                                    <a href="<{:url($child['url_str'], ['menu_id'=>$sub_child['id']])}>" target="rightFrame"> 
+                                        <{$child.name}>
+                                    </a>
+                                {/if}
+                                <i></i>
+                            {/if}
+                        </li>
+                    {/volist}
+                    
+                </ul> 
+                {/if}   
+            </dd>
+            
+        {/volist}
+
+    
+    </dl>
+    
+</body>
+</html>
